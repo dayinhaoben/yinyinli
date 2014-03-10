@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset='utf-8'>
+<title>Color Memory</title>
+<link rel="stylesheet" href="colormemory.css" />
+</head>
+<body>
+
+				
+<div id="game" class="game">
+		
+	<div id="gameComplete">
+		<p id="top">Your time taken was <span class="gameScore"></span>.</p>
+	</div>
+	
+	<div id ="gameStats" class="gameStats">
+		<div class="logo"><img src="images/logo.png" /></div>
+		<div class="time">
+			<h3>Game Information:</h3><br />
+			Time: <span class="gameScore"></span>
+		</div>
+		<div class="buttons">
+			<ul>
+				<li><a class="gameRestart" href="#">Restart</a></li>
+				<li><a id="gamePlay" href="#">Start</a></li>
+			</ul>
+		</div>
+	</div>	
+	
+	
+				
+	<div id="cards">
+		<div class="card">
+		 	<div class="face front"></div>
+			<div class="face back"></div>
+		</div> <!-- .card -->
+	</div> <!-- #cards -->
+</div> <!-- #game -->
+
+<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+<script src="colormemory.js"></script>
+
+
+</body>
+</html>
