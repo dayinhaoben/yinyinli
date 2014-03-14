@@ -1,141 +1,186 @@
-﻿span {
+﻿html{
+    height: 100%;
+    overflow-x: hidden;
+}
+span {
 	color:#404040;
 	font-size: 25px;
 	font-weight: bold;
 }
-p {
-	font-size: 20px;
-	line-height: 26px;
-	color:#404040;
+li {
+	list-style: none;
 }
-a {
-	color:#E63E56;
-	font-size: 20px;
-	text-decoration: none;
-}
-a:hover {
-	color:#DF8360;
-}
-
-#header{
-	width:100%;
-	max-height:580px;
-}
-.logoNav {
-	background-color: #E9EAF5;
-	opacity:0.9;
-	z-index:1;
-	width:100%;
-	height:100px;
-	position:fixed;
-	top:0;
-}
-.logo {
-	float:left;
-}
-#navibar {	
-	float:left;
-}
-#navibar li {
-	list-style-type: none;
-	position:relative;
-	display: inline-block;
-}
-#navibar li a{
-	display:block;
-	font-size: 25px;
-	font-weight: bold;
-	padding:15px 40px 0 40px;
-}
-
-#slideshow{
-	z-index:2;
-	margin-top:100px;
-    height:480px; 
-    width:100%; 
-    float:left;
-}
-#slides{
-    height:400px; 
-    position:relative
-}
-.slide{
-    height:400px; 
-    width:100%; 
-    overflow:hidden; 
-    position:absolute;
-    border-radius:10px; 
-}
-
-#slides-controls{
-    width:60px; 
-    background-color:#fff; 
-    height:20px; 
-    margin-left:auto; 
-    margin-right:auto; 
-    padding:5px
-}
-#slides-controls a{
-    margin:5px; 
-    width:8px; 
-    height:8px; 
-    border-radius:4px; 
-    -moz-border-radius:4px; 
-    -webkit-border-radius:4px; 
-    -o-border-radius:4px; 
-    background:#F60; 
-    border:1px solid #fff; 
-    text-indent:-9000px; 
-    display:block; 
-    overflow:hidden; 
-    float:left
-}
-#slides-controls a:hover{
-    background:#F30
-}
-#slides-controls a.highlight{
-    background:#fff; 
-    border:1px solid #F30
-}
-
-.screenWidth {
-	width:100%;
-	float:left;
-}
-.inner_content {
-	max-width: 950px;
-	margin:5px auto;
-	overflow: hidden;
-}
-.inner_content_height{
-	max-height: 450px;
+section {
 	overflow:hidden;
+	height:993px;
 }
-.infoLeft1 {
-	max-width: 400px;
-	float:left;
-	margin-top:0;
-	overflow: hidden;
+.content {
+	margin-top:200px;
 }
-.infoRight1 {
-	max-width: 450px;
-	float:right;
-	margin-top:0;
-	overflow: hidden;
+.curtains{
+    width: 100%;
+    z-index:1;
+    position:relative;
 }
 
-.infoLeft2 {
-	max-width: 280px;
-	float:left;
-	margin-top:0;
-	overflow: hidden;
+.curtains>li{
+    -webkit-transform:translateZ(0);
+    background: white;
+    position: fixed;
+    display:block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    z-index:1;
 }
-.infoRight2 {
-	max-width: 670px;
-	float:right;
-	margin-top:0;
-	overflow: hidden;
+.curtains>li.hidden{display:none;}
+.curtains>li:first-child{z-index:2;}	
+
+#whoAmI {
+	background-color: #DCE6F2;
 }
+ 	#yinpic img{
+ 		border-radius:20px;
+ 		margin:150px 30px 0 80px;
+ 		max-width:300px;
+ 		max-height: 700px;
+ 		overflow:hidden;
+ 		float:left;
+ 		box-shadow: 10px 10px 5px #888888;
+ 	}
+ 	#whoAmI h2 {
+ 		margin-top:150px;
+ 		font-size: 60px;
+		font-family:cursive;
+		color:#797C83;
+ 	}
+ 	#whoAmI p {
+ 		font-size:24px;
+ 		font-family:cursive;
+ 		color:#797C83;
+ 	}
+	#whoAmI #button {
+		border-radius:5px;
+		font-family: cursive;
+		font-size: 24px;
+		font-weight: bold;
+		color:orange;
+		padding:10px 75px;
+		text-decoration: none;
+		border:1px solid orange;
+		background-color:#FD5B78;
+		box-shadow: 10px 10px 5px #888888;
+	}
+
+#move {
+	background:url('images/bg-1.jpg') repeat;
+}
+ 	#moveMain h2{
+ 		font-size: 80px;
+		font-family:monospace,"Lucida Console", Courier;
+		color:#FD5B78;
+ 	}
+ 	.back {
+ 		position:absolute;
+ 		z-index:100;
+ 	}
+ 	.front {
+ 		position:absolute;
+ 		z-index:1000;
+ 	}
+ 	.front img {
+ 		opacity: 0.5;
+ 	}
+ 	#moveP {
+ 		margin-top:400px;
+ 		font-family:cursive;
+ 		font-size: 26px;
+ 		color:white; 
+ 	}
+
+
+#project  {	
+	background:url('images/bg-2.jpg') repeat ;
+	background-size: cover;
+}
+	#projectMain a{
+		text-decoration: none;
+	}
+	#projectMain span{
+ 		font-size: 80px;
+		font-family:monospace,"Lucida Console", Courier;
+		color:#FD5B78;
+		border:1px solid orange;
+		border-radius:10px;
+ 	}
+ 	#projectMain p {
+ 		font-size: 60px;
+ 		font-weight: bold;
+		font-family:monospace,"Lucida Console", Courier;
+		color:#FD5B78;
+		border-radius: 50px;
+		max-width:600px;
+		height:100px;
+		background-color: #F7EFD7;
+		text-align: center;
+		padding-top: 30px;
+		box-shadow: 10px 10px 5px orange;
+ 	}
+#personality {
+	background: url('images/bg-3.jpg');
+	background-size: cover;	
+}
+	#personality h2 {
+		font-size: 40px;
+		font-family:monospace,"Lucida Console", Courier;
+		color:#FD5B78;
+	}
+	#personality p {
+		font-size:26px;
+		font-weight: bold;
+		font-family:monospace,"Lucida Console", Courier;
+		color:orange;
+		margin-left:100px;
+	}
+
+ 	#personality li{
+		display: inline-block;
+ 	}
+	#personality a {
+		margin-left:10px;
+	}
+ 	#personality img {
+ 		width:200px;
+ 		height:200px;
+ 		border-radius:10px;
+ 	}
+
+#contact {
+	background: url('images/bg-4.jpg') repeat;	
+}
+ 	#contact h2 {
+ 		margin-top:150px;
+ 		font-size: 60px;
+		font-family:cursive;
+		color:#FD5B78;
+	}
+	#contact a {
+		margin-left:100px;
+		zoom:1;
+	}
+	#contact a:hover {
+		zoom:5;
+	}
+	#contact p {
+		font-size:26px;
+		font-weight: 900;
+		font-family:monospace,"Lucida Console", Courier;
+		color:orange;
+		margin-left:100px;
+	}
+
 
 
 

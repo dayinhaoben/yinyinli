@@ -4,7 +4,13 @@
 	<title>Yinyin Li</title>
 	<meta http-equiv="Conten-type" content="text/html: charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<script type="text/javascript" src="index.js"></script>
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="js/curtain.js"></script>
+	<script src="js/jquery.scrollorama.js"></script>
+	<script src="js/scripts.js"></script>
+
+	<script type="text/javascript" src="js/index.js"></script>
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PH9QLD"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -19,176 +25,97 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body onload="setUpSlideShow()">
 
-	<div class="logoNav">
-		<div class="inner_content">
-			<div class="logo">
-				<img src="images/YinyinLi.jpg" style="width:80px;height:80px; margin-left:50px;border-radius:10px;">
-			</div>
-			
-			<div id="navibar">
-				<ul>
-					<li><a href="index.html">About Me</a></li>
-					<li><a href="project.html">Project</a></li>
-					<li><a href="index.html"><img src="images/english.jpg"></a></li>
-					<li><a href="swedish.html"><img src="images/swedish.jpg"></a></li>
-				</ul>		
-			</div>
-		</div>			
-	</div>
-	
-	 <!--slideshow-->
-	<div id="slideshow">
-		<div id="slides">
-    		<div class="slide">
-       			<img src="images/sample1.jpg" />
-    		</div>
-    		<div class="slide">
-       			<img src="images/sample2.jpg" />
-    		</div>
-		    <div class="slide">
-		        <img src="images/sample3.jpg" />
-		    </div>
-		</div>
-		<div id="slides-controls">
-		    <a href="#">1</a>
-		    <a href="#">2</a>
-		    <a href="#">3</a>
-		</div>
-	</div>
-	
-<!--cv title-->	
-<div class="screenWidth">
-<hr>
-	<div class="inner_content">
-		<center><p style="font-size:30px;">Curriculum Vitae&nbsp;--&nbsp;Yinyin Li</p></center>
-	</div>
-</div>		
+	<ul class="curtains">
+		<li>
+			<section id="whoAmI">
+				<!--Who am I-->	
+				<a id="yinpic" href="english.html"><img src="images/yin2.jpg"></a>
 
-<!--Who am I-->	
-<div class="screenWidth">
-<hr>
-	<div class="inner_content">	
-	 	<br><span>Who am I</span><br>
-		<p><b>Yinyin Li, 1989-09-10, Chinese<br>Rullstugevägen 1, 18495, Ljusterö, Stockholm</b></p>
+			 	<h2>Who am I</h2>
+			 	<a id="button" href="english.html"><span>About Me</span></a>
 
-		<p>I am a web developer with an IT education and work experience in html, css, javascript, php and mysql projects. I am interested in learning more technical skills and look forward to working as a web professional.</p>		
-	</div>					
-</div>
+				<p><b>Yinyin Li, 1989-09-10, Chinese<br>Rullstugevägen 1, 18495, Ljusterö, Stockholm</b></p>
 
-<!--education-->	
-<div class="screenWidth">	
-<hr>
-	<div class="inner_content">				
-		<h2>Education</h2>
-		<p><b>2012-2013	Swedish for immigrants, Åkersberga </b><br>Finished courses A-D </p>
+				<p>I am a web developer with an IT education and work experience in html, css, javascript, php and mysql projects. I am interested in learning more technical skills and look forward to working as a web professional.</p>		
+				
+								
+				
+			</section>
+		</li>
 
-		<p><b>2010-2011	Linnaeus University, Computer Science and Social Work </b><br>Exchange student for last year of Bachelor Degree. </p>
+		<li>
+			<section id="move">
+				<div class="content" id="moveMain">
+					<h2>Find Lucky In Sweden</h2>
+					<div class="back"><img id="china" src="images/country1.jpg"></div>
+					<div class="front"><img src="images/move.jpg"></div>
+					<div id="moveP">
+						<p>Choose to live in Sweden is an accident. Didn't know I would met a Swedish sweet guy in the first place. I would say that live in Sweden brings me a lot of trouble, but also takes me a fun life. You might ask "Sweden=fun", Are you crazy? puuuuuuu.. Well, personaly I enjoy here, and I enjoy to be a Swedish island people.  </p>	
+					</div>		
+				</div>
+			</section>
+		</li>
 
-		<p><b>2007-2010	Anhui University of TCM, Medical Software Development</b><br>Bachelor Degree  </p>
-	</div>	
-</div>
+		<li>
+			<section id="project">
+				<div class="content" id="projectMain">
+					<a href="project.html"><span>Projects</span></a>
+					<a href="colormemory.html"><p>Color Memory</p></a>
+					<a href="https://github.com/dayinhaoben/excel-guide"><p>Blog/Web site</p></a>
+				</div>
+			</section>
+		</li>
 
-<!--experience-->	
-<div class="screenWidth">
-<hr>
-	<div class="inner_content">				
-		<h2>Work Experience</h2>
-		<p><b>2013-now	Freelancer web developer </b><br>Help small companies as well as my friends to take care of their web sites. </p>
+		<li>
+			<section id="personality">
+				<div class="content" id="personalityMain">
+				 	<h2>See my personality in the pictures</h2>
+					<p>Enthusiasm</p>
+					<p>Friendly</p>
+					<p>Weird</p>
+					<p>Singer star</p>
+					<p>Sweetie</p>
+					<p>Girly(not really)</p>
+					<ul>
+						<li><a href="http://www.chrisspooner.com"><img src="images/personality1.jpg" alt="" /></a></li>
+						<li><a href="http://www.chrisspooner.com"><img src="images/personality2.jpg" alt="" /></a></li>
+						<li><a href="http://www.chrisspooner.com"><img src="images/personality3.jpg" alt="" /></a></li>
+						<li><a href="http://www.chrisspooner.com"><img src="images/personality4.jpg" alt="" /></a></li>
+						<li><a href="http://www.chrisspooner.com"><img src="images/personality5.jpg" alt="" /></a></li>
+						<li><a href="http://www.chrisspooner.com"><img src="images/personality6.jpg" alt="" /></a></li>
+					</ul>
 
-		<p><b>2013-2013 	Production, LensOn AB</b><br>Based on orders to make sure the products been delivered on time.</p>
+				</div>		
+			</section>
+		</li>
 
-		<p><b>2013-2013 	IT-Security Consultant (Internship), IT-säkerhetsföreningen SNSC</b><br>Based on Linux, I used OpenVas to test the system security. Based on the results, I solved the problems.  </p>
+		<li>
+			<section id="contact">				
+					<div class="content" id="contactMain">	
+						<h2>Contact Information</h2>					
+						<a href="https://www.facebook.com/yinyin.li.777"><img src="images/fb.jpg"></a>&nbsp;
+						<a href="https://www.linkedin.com/in/yinyinli"><img src="images/linkedin.jpg"></a>		
 
-		<p><b>2012-2012 	Shop assistant, Tempo, Ljusterö</b><br>Deal with the products and help with customers.</p>
-
-		<p><b>2011-2012 	Administration and contact person, Tvia Inc, (USA), Zhuhai, China </b><br>Contact with customers, deal with prices, draft of contracts, produce variety of forms, contact with the person in the USA (mother company).   </p>		
-	</div>			
-</div>
-
-<!--extra activities-->	
-<div class="screenWidth">
-<hr>
-	<div class="inner_content">				
-		<h2>Extra-Curricular Activities</h2>
-		<p><b>2012-now	Meetup in many different groups and events, Stockholm </b><br>Meet similar skilled persons and talk about our experience. I mainly go to web meetups to listen to senior programmers' presentation and get some inspiration.</p>
-
-		<p><b>2010-2011	Chinese Class organizer and teacher, Linnaeus University </b><br>Promoting on social media, organized both international and Chinese students as well as creating study material and booking classroom. </p>
-
-		<p><b>2007-2009 	Class representatives, Anhui University of TCM</b><br>Keep contact between students and teachers. </p>		
-	</div>	
-</div>
-
-<!--courses and skills-->	
-<div class="screenWidth">
-<hr>
-	<div class="inner_content">
-		<h2>University courses within Computer Science and programming skills</h2>
-	
-		<div class="infoLeft2">
-			<p>Advanced Mathematics 1 & 2<br>
-				Basic Computing Method<br>
-				Statistics Analysis<br>
-				Programming with C<br>
-				Analog Electronics<br>
-				Programming with C++<br>
-				Basic Numerical Methods<br>
-				Discrete Mathematics<br>
-				Programming with VB<br>
-				Compiler Construction<br>
-				Data Stucture<br>
-				Database Theory<br>
-				Computer Architecture Theory<br>
-				File Indexing Method<br>
-				Compiler Programming<br>
-				Operating System<br>
-				Computer Graphics<br>
-				Algorithm Analysis<br>
-				Interface in Programming</p><br>
-		</div>
-
-		<div class="infoRight2">
-			<p>
-				HTML <br>
-				DIV+CSS<br>
-				Javascript<br>
-				PHP<br>
-				MySQL<br>
-				Git/Github<br>
-				Java core<br>
-				J2EE<br>
-				Tomcat6.0<br>
-				Struts2<br>
-				JDBC<br>
-				Oracle<br>
-				JSP<br>
-				Linux<br>
-				</p>
-				<p>
-				<b>Tools I like to use:</b><br>
-				eclipse<br>
-				sublime<br>
-			</p>
+						<p>E-mail: liyinyin07@gamil.com</p>			
+					</div>
+				</div>
+			</section>
+		</li>
 		
-		</div>
-	</div>
-</div>
+	</ul>
+	
+	
 
-<!--contact-->	
-<div class="screenWidth">
-<hr>
-	<div class="inner_content">	
-		<h2>Contact Information</h2>
-		<div class="infoLeft2">	
-			<a href="https://www.facebook.com/yinyin.li.777"><img src="images/fb.jpg"></a>&nbsp;
-			<a href="https://www.linkedin.com/in/yinyinli"><img src="images/linkedin.jpg"></a>		
-		</div>
 
-		<div class="infoRight2">
-			<p>E-mail: liyinyin07@gamil.com</p>						
-			
-		</div>
-	</div>
-</div>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
 
