@@ -7,13 +7,13 @@ $(document).ready(function(){
     
     
     scrollorama.animate('#whoAmI img',{
-		duration:200, property:'rotate', start:-20, end:20
+		duration:200, property:'rotate', start:0, end:20
 	});
 	scrollorama.animate('#whoAmI h2',{
-		duration:200, property:'rotate', start:-20, end:20
+		duration:200, property:'rotate', start:0, end:20
 	});
 	scrollorama.animate('#whoAmI p',{
-		duration:200, property:'rotate', start:-20, end:20
+		duration:200, property:'rotate', start:0, end:20
 	});
     
     scrollorama.animate('#move .front',{

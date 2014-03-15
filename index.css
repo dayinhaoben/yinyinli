@@ -162,9 +162,14 @@ section {
 #contact {
 	background: url('images/bg-4.jpg') repeat;	
 }
+	#contactMain {
+		width:800px;
+		height:500px;
+		margin:0 auto;
+	}
  	#contact h2 {
  		margin-top:150px;
- 		font-size: 60px;
+ 		font-size: 80px;
 		font-family:cursive;
 		color:#FD5B78;
 	}
@@ -177,7 +182,6 @@ section {
 		font-weight: 900;
 		font-family:monospace,"Lucida Console", Courier;
 		color:orange;
-		margin-left:100px;
 	}
 
 
