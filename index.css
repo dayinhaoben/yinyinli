@@ -167,11 +167,18 @@ section {
 		height:500px;
 		margin:0 auto;
 	}
+	
  	#contact h2 {
  		margin-top:150px;
  		font-size: 80px;
 		font-family:cursive;
 		color:#FD5B78;
+		-webkit-animation:changeCol 30s; /*Chrome, Safari, Opera */
+		animation: changeCol 30s;
+	}
+	@-webkit-keyframes changeCol {
+		from {color:#FD5B78;}
+		to {color:orange;}
 	}
 	#contact a {
 		margin-left:100px;
