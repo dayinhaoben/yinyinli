@@ -78,6 +78,7 @@ section {
 	background:url('images/bg-1.jpg') repeat;
 }
  	#moveMain h2{
+ 		margin-left:150px;
  		font-size: 80px;
 		font-family:monospace,"Lucida Console", Courier;
 		color:#FD5B78;
@@ -169,11 +170,8 @@ section {
 	}
 	#contact a {
 		margin-left:100px;
-		zoom:1;
 	}
-	#contact a:hover {
-		zoom:5;
-	}
+	
 	#contact p {
 		font-size:26px;
 		font-weight: 900;
