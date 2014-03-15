@@ -17,7 +17,7 @@ $(document).ready(function(){
 	});
     
     scrollorama.animate('#move .front',{
-    	delay:993, duration:993, property:'left',start:270, end:1000,  easing:'easeOutBounce'
+    	delay:993, duration:993, property:'left',start:220, end:950,  easing:'easeOutBounce'
     });
 
   	  scrollorama.animate('#project span', {
