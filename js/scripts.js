@@ -17,7 +17,7 @@ $(document).ready(function(){
 	});
     
     scrollorama.animate('#move .front',{
-    	delay:993, duration:993, property:'left',start:220, end:950,  easing:'easeOutBounce'
+    	delay:993, duration:993, property:'left',start:0, end:950,  easing:'easeOutBounce'
     });
 
   	  scrollorama.animate('#project span', {
@@ -33,7 +33,7 @@ $(document).ready(function(){
 	});
 
   	 scrollorama.animate('#personality p',{
-		delay:2979, duration:993, property:'font-size', start:20, end:50
+		delay:2979, duration:993, property:'font-size', start:20, end:5
 	});
 
   	 scrollorama.animate('#personality ul li:nth-child(1)',{
@@ -46,7 +46,6 @@ $(document).ready(function(){
 	scrollorama.animate('#personality ul li:nth-child(5)',{
 		delay:2979, duration:993, property:'top', start:0, end: -300
 	});
-
 	
 });
 

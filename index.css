@@ -4,7 +4,6 @@
 }
 span {
 	color:#404040;
-	font-size: 25px;
 	font-weight: bold;
 }
 li {
@@ -12,10 +11,10 @@ li {
 }
 section {
 	overflow:hidden;
-	height:993px;
+	height:995px;
 }
 .content {
-	margin-top:200px;
+	margin-top:10%;
 }
 .curtains{
     width: 100%;
@@ -43,93 +42,166 @@ section {
 }
  	#yinpic img{
  		border-radius:20px;
- 		margin:150px 30px 0 80px;
- 		max-width:300px;
- 		max-height: 700px;
+ 		margin:0 2.5% 0 6%;
  		overflow:hidden;
  		float:left;
  		box-shadow: 10px 10px 5px #888888;
  	}
  	#whoAmI h2 {
- 		margin-top:150px;
- 		font-size: 60px;
 		font-family:cursive;
 		color:#797C83;
  	}
  	#whoAmI p {
- 		font-size:24px;
  		font-family:cursive;
  		color:#797C83;
  	}
 	#whoAmI #button {
-		border-radius:5px;
+		border-radius:10px;
 		font-family: cursive;
-		font-size: 24px;
 		font-weight: bold;
 		color:orange;
-		padding:10px 75px;
 		text-decoration: none;
 		border:1px solid orange;
 		background-color:#FD5B78;
 		box-shadow: 10px 10px 5px #888888;
 	}
+@media only screen and (max-width:480px) {
+span {
+	font-size: 1em;
+}
+ 	#yinpic img{
+		width:20%; 
+ 		height:50%;
+ 	}
+ 	#whoAmI h2 {
+ 		font-size: 3em;
+ 	}
+ 	#whoAmI p {
+ 		font-size:1em;		
+ 	}
+	#whoAmI #button {
+		font-size: 1em;	
+	}
+}
+@media only screen and (min-width: 481px) {
+span {
+	font-size: 1em;
+}
+	#yinpic img{
+		width:20%; 
+ 		height:70%;
+ 	}
+ 	#whoAmI h2 {
+ 		font-size: 6em;
+ 	}
+ 	#whoAmI p {
+ 		font-size:1.5em;
+ 	}
+	#whoAmI #button {	
+		font-size: 2em;	
+		padding:1% 4%;
+	}
+}
+
 
 #move {
 	background:url('images/bg-1.jpg') repeat;
 }
  	#moveMain h2{
- 		margin-left:150px;
- 		font-size: 80px;
+ 		margin-left:12.5%;
 		font-family:monospace,"Lucida Console", Courier;
 		color:#FD5B78;
  	}
  	.back {
- 		width:100%;
- 		position:absolute;
- 		
+ 		position:absolute;	
+ 	}
+ 	.back img{
+ 		width:100%;	
  	}
  	.front {
  		position:absolute;
- 		
  	}
  	.front img {
  		opacity: 0.7;
+ 		width:100%;
  	} 	
- 	#moveP {
- 		margin-top:400px;
+ 	#moveP {	
  		font-family:cursive;
  		font-size: 26px;
  		color:white; 
  	}
-
+@media only screen and (max-width: 480px) {
+	#moveMain h2{
+ 		font-size: 3em;
+ 	}
+ 	.front img {
+ 		opacity: 0.7;
+ 		width:50%;
+ 	} 
+ 	
+ 	#moveP {
+ 		margin-top:70%;
+ 		font-size: 1em; 
+ 	}
+}
+@media only screen and (min-width: 481px) {
+	#moveMain h2{
+ 		font-size: 5em;
+ 	}
+ 	
+ 	#moveP {
+ 		margin-top:20%;
+ 		font-size: 2em; 
+ 	}
+}
 
 #project  {	
 	background:url('images/bg-2.jpg') repeat ;
 	background-size: cover;
 }
+
 	#projectMain a{
 		text-decoration: none;
 	}
 	#projectMain span{
- 		font-size: 80px;
 		font-family:monospace,"Lucida Console", Courier;
 		color:#FD5B78;
 		border:1px solid orange;
 		border-radius:10px;
  	}
  	#projectMain p {
- 		font-size: 60px;
  		font-weight: bold;
 		font-family:monospace,"Lucida Console", Courier;
 		color:#FD5B78;
 		border-radius: 50px;
-		max-width:600px;
-		height:100px;
 		background-color: #F7EFD7;
 		text-align: center;
-		padding-top: 30px;
 		box-shadow: 10px 10px 5px orange;
  	}
+
+ @media only screen and (max-width:480px) {
+	#projectMain{
+		margin-top:80%;
+	}
+	#projectMain span{
+ 		font-size: 3em;
+ 	}
+ 	#projectMain p {
+ 		font-size: 1.5em;
+ 		width:50%;
+ 	}
+ }
+ @media only screen and (min-width:481px) {
+	#projectMain span{
+ 		font-size: 5em;
+ 	}
+ 	#projectMain p {
+ 		font-size: 3em;
+ 		width:40%;
+ 		padding: 2% 3%;
+ 	}
+ }
+
 #personality {
 	background: url('images/bg-3.jpg');
 	background-size: cover;	
@@ -144,33 +216,41 @@ section {
 		font-weight: bold;
 		font-family:monospace,"Lucida Console", Courier;
 		color:orange;
-		margin-left:100px;
-	}
-
- 	#personality li{
-		display: inline-block;
- 	}
-	#personality a {
-		margin-left:10px;
+		margin-left:8%;
 	}
  	#personality img {
- 		width:200px;
- 		height:200px;
  		border-radius:10px;
  	}
+ 	#personality img {
+ 		margin-right:5px;
+ 		float:left;
+ 	}
+ 
+@media only screen and (max-width: 480px) { 	
+ 	#personality img {
+ 		width:15%;
+ 		height:10%;
+ 	}
+ }
+ @media only screen and (min-width: 481px) { 
+ 	#personality img {
+ 		width:15%;
+ 		height:18%;
+ 	}	 	
+ }
+
 
 #contact {
 	background: url('images/bg-4.jpg') repeat;	
 }
 	#contactMain {
-		width:800px;
-		height:500px;
+		width:68%;
+		height:50%;
 		margin:0 auto;
 	}
 	
  	#contact h2 {
- 		margin-top:150px;
- 		font-size: 80px;
+ 		margin-top:25%;
 		font-family:cursive;
 		color:#FD5B78;
 		-webkit-animation:changeCol 30s; /*Chrome, Safari, Opera */
@@ -180,8 +260,12 @@ section {
 		from {color:#FD5B78;}
 		to {color:orange;}
 	}
+	@keyframes changeCol {
+		from {color:#FD5B78;}
+		to {color:orange;}
+	}
 	#contact a {
-		margin-left:100px;
+		margin-left:8%;
 	}
 	
 	#contact p {
@@ -190,6 +274,22 @@ section {
 		font-family:monospace,"Lucida Console", Courier;
 		color:orange;
 	}
+@media only screen and (max-width: 480px) {	
+	#contact h2 {
+		font-size: 2em;
+	}
+	#contact p {
+		font-size:1em;
+	}
+}
+@media only screen and (min-width: 481px) {
+	#contact h2 {
+		font-size: 5em;
+	}
+	#contact p {
+		font-size:2em;
+	}
+}
 
 
 
