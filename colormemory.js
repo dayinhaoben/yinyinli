@@ -1,5 +1,3 @@
-
-//create all the variables
 var score;
 var cardsmatched;
 
@@ -12,17 +10,13 @@ var uirestart = $(".gameRestart");
 var uiScore = $(".gameScore");
 var uiPlay = $("#gamePlay");
 var uiTimer = $("#timer");
-
-//create deck array
 var matchingGame = {};
 matchingGame.deck = ['lightBlue', 'yellow', 'purple', 'green', 'chineseRed', 'orange', 'red', 'blue', 'lightBlue', 'yellow', 'purple', 'green', 'chineseRed', 'orange', 'red', 'blue',];
 
-//on document load the lazy way
 $(function(){
 	  init();
 });
 
-//initialise game
 function init() {
 					uiComplete.hide();
 					uiCards.hide();
@@ -40,8 +34,7 @@ function init() {
 					});
 			}
 
-//start game and create cards from deck array
-function startGame(){
+function startGame(){//start game and create cards from deck array
 	uiTimer.show();
 	uiScore.html("0 seconds");
 	uiStats.show();
@@ -54,32 +47,23 @@ function startGame(){
 			for(var i=0;i<15;i++){
 					$(".card:first-child").clone().appendTo("#cards");
 				}
-				// initialize each card's position
-				uiCards.children().each(function(index) {
-					// align the cards to be 3x6 ourselves.
-					$(this).css({
+				uiCards.children().each(function(index) {// initialize each card's position					
+					$(this).css({// align the cards to be 3x6 ourselves.
 						"left" :30 + ($(this).width() + 20) * (index % 4),
 						"top" : 30 + ($(this).height() + 20) * Math.floor(index / 4)
-					});
-					// get a pattern from the shuffled deck
-					var pattern = matchingGame.deck.pop();
-					// visually apply the pattern on the card's back side.
-					$(this).find(".back").addClass(pattern);
-					// embed the pattern data into the DOM element.
-					$(this).attr("data-pattern",pattern);
-					// listen the click event on each card DIV element.
-					$(this).click(selectCard);
+					});					
+					var pattern = matchingGame.deck.pop();// get a pattern from the shuffled deck
+					$(this).find(".back").addClass(pattern);// visually apply the pattern on the card's back side.
+					$(this).attr("data-pattern",pattern);// embed the pattern data into the DOM element.					
+					$(this).click(selectCard);// listen the click event on each card DIV element.
 				});											 
 	   	timer();
 	};			   
   }
 
-
-
-//timer for game
+//timer 
 function timer() {
-				//alert("timer set")
-				if (playGame) {
+				if (playGame) {//alert("timer set")
 					scoreTimeout = setTimeout(function() {
 						uiScore.html(++score + " seconds");		
 						timer();
@@ -93,14 +77,12 @@ function shuffle() {
 }
 
 //onclick function add flip class and then check to see if cards are the same
-function selectCard() {
-	// we do nothing if there are already two cards flipped.
-	if ($(".card-flipped").size() > 1) {
+function selectCard() {	
+	if ($(".card-flipped").size() > 1) {// we do nothing if there are already two cards flipped.
 	return;
 	}
-	$(this).addClass("card-flipped");
-	// check the pattern of both flipped card 0.7s later.
-	if ($(".card-flipped").size() == 2) {
+	$(this).addClass("card-flipped");	
+	if ($(".card-flipped").size() == 2) {// check the pattern of both flipped card 0.7s later.
 	setTimeout(checkPattern,700);
 	}
 }
