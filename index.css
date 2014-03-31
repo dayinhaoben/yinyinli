@@ -22,6 +22,15 @@ a {
 li {
 	list-style: none;
 }
+.inputButton {
+		border:none;
+		background:none;
+		text-decoration: underline;
+		font-size: 18px;
+		font-family:Letter Gothic Std, Letter Gothic, Eurostile, Arial,Verdana, sans-Serif;
+		text-transform: uppercase;
+		src:url(scource/LetterGothicStd.otf);
+	}	
 section {
 	overflow:hidden;
 	height:995px;
@@ -59,15 +68,7 @@ section {
 	#whoAmIC {
 		float:right;
 	}
-	.inputButton {
-		border:none;
-		background:none;
-		text-decoration: underline;
-		font-size: 18px;
-		font-family:Letter Gothic Std, Letter Gothic, Eurostile, Arial,Verdana, sans-Serif;
-		text-transform: uppercase;
-		src:url(scource/LetterGothicStd.otf);
-	}	
+	
 	#cv {
 		left:-100%;
 		width:100%;
@@ -249,80 +250,29 @@ section {
 	background-size: cover;
 }
 	#projectMain {
-		margin-top: 10%
+		width:50%;
+		float:right;
+		margin-top: 5%
 	}
-	#projectMain h2{
-		margin-left:60%;
+	#projectMain p:nth-child(1){
+		font-size: 60px;
+		margin-left:3%;
  	}
- 	.projects {
- 		border:1px solid black;
- 		float:right;
-	    position: relative;
-	    margin-right: 10%;
-	    background-color: #d5d5d5;
-	    text-align: center;
-		box-shadow: 10px 10px 5px #5b5b5b;
-		padding:3% 3%;
-		border-radius:50px;
-	    -webkit-transform-origin: center center;
-	    -moz-transform-origin: center center;
-	    -ms-transform-origin: center center;
-	    -o-transform-origin: center center;
-	    transition: all 1s; 
-    }
-    .projects.css {  
-      	-webkit-animation-delay:1s;
-      	-moz-animation-delay:1s;
-      	-ms-animation-delay:1s;
-     	 -o-animation-delay:1s;
-      	animation-dely:1s;
-    }
-    .projects.animated {
-      	-webkit-animation: 1600ms pulsate infinite alternate ease-in-out;
-      	-moz-animation: 1600ms pulsate infinite alternate ease-in-out;
-      	-ms-animation: 1600ms pulsate infinite alternate ease-in-out;
-      	-o-animation: 1600ms pulsate infinite alternate ease-in-out;
-      	animation: 1600ms pulsate infinite alternate ease-in-out;
-    }
+ 	.projectInfo {
+ 		display:none;
+ 		background-color: white;
+ 		width:90%;
+ 		height:60%;
+ 		overflow: scroll;
+ 	}
+ 	.projectInfo img {
+ 		float:left;
+ 		border-radius: 10px;
+ 	}
+ 	
 
-    .projects.css:hover {
-      	-webkit-transform: scale(2);
-      	-moz-transform: scale(2);
-     	-ms-transform: scale(2);
-      	-o-transform: scale(2);
-      	transform: scale(2);
-      	-webkit-animation:'';
-      	-moz-animation:none;
-      	-ms-animation:'';
-      	-o-animation:'';
-      	animation:'';
-    }
+ 	
 
-    @keyframes pulsate {
-     	0% { transform: scale(1); }
-      	50% { transform: scale(1.3); }
-      	100% { transform: scale(1); }
-    }
-    @-webkit-keyframes pulsate {
-      	0% { -webkit-transform: scale(1); }
-      	50% { -webkit-transform: scale(1.3); }
-      	100% { -webkit-transform: scale(1); }
-    }
-    @-moz-keyframes pulsate {
-      	0% { -moz-transform: scale(1); }
-      	50% { -moz-transform: scale(1.3); }
-      	100% { -moz-transform: scale(1); }  
-    }
-    @-ms-keyframes pulsate {
-      	0% { -ms-transform: scale(1); }
-      	50% { -ms-transform: scale(1.3); }
-      	100% { -ms-transform: scale(1); }  
-    }
-    @-o-keyframes pulsate {
-      	0% { -o-transform: scale(1); }
-      	50% { -o-transform: scale(1.3); }
-      	100% { -o-transform: scale(1); }  
-    }
 
 
 
@@ -357,8 +307,3 @@ section {
 		font-weight: 900;
 		color:gray;
 	}
-
-
-
-
-

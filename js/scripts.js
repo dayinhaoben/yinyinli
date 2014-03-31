@@ -10,6 +10,13 @@ $(document).ready(function(){
 			$(".topnav").hide();
 	});
 
+	$("#showColorM").click(function() {
+		$("#colorMInfo").toggle(1500);
+	});
+	$("#showBlog").click(function() {
+		$("#blogInfo").toggle(1500);
+	});
+
 
 	 $('.curtains').curtain();
    

@@ -123,9 +123,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<li>
 			<section id="project">
 				<div class="content" id="projectMain">
-					<h2>Projects</h2><br>					
-					<div class='projects animated css'><a href="colormemory.html" target="_blank"><b>Color Memory</b><br>HTML,CSS,javascript<br>JQuery</a></div>
-					<div class='projects animated css'><a href="https://github.com/dayinhaoben/excel-guide" target="_blank"><b>Blog/Web site</b><br>html,css,javascript<br>php,Mysql</a></div>
+					<p>Projects</p>
+					<input id="showColorM" class="inputButton" type="button" value="color memory"/>		
+					<input id="showBlog" class="inputButton" type="button" value="Blog/web site"/>				
+					<div class="projectInfo" id='colorMInfo'>
+						<img src="images/infoColorM.jpg">
+						<a href="colormemory.html" target="_blank"><b>Color Memory Web Game</b></a>
+						<p>HTML, DIV+CSS, Javascript</p>
+
+						<p>Game function: Game begin with doubling every card of 8 different color cards and rendomly located in 16 places which called front face and hide with a back face card. whenever game begin, time begin to count. Using mouse to choose two cards every time to see front face, if front face are not same, those two cards hide again, if same, then take them away. Game finish with every cards are taken away.</p>
+
+						<p>By the project I learn more about how to use JQuery to make the function work efficent. And Firebug is a perfect tool to test this project</p>	
+					</div>
+					<div class="projectInfo" id='blogInfo'>
+						<img src="images/infoBlog.jpg">
+						<a href="https://github.com/dayinhaoben/excel-guide" target="_blank"><b>Blog/web site</b></a>
+						<p>PHP, MySQL, HTML, DIV+CSS, Javascript</p>
+
+						<p>Description: The whole web project has two versions: responsive and nonresponsive.</p>
+						<p>The project made up by two main parts which are user and admin. 
+							
+							Pages are structured by template php files. All ariticle information in the page are from database.</p> 
+						
+						<p>On admin part, first has a log in function. In this part administrator can management the articles.</p>
+
+						<p>Plus: The link of the project is for people who wants to check the code. But the database is not attached in the source.</p>	
+					</div>
 				</div>
 			</section>
 		</li>
