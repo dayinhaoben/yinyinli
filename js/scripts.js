@@ -26,7 +26,7 @@ $(document).ready(function(){
     
     
     scrollorama.animate('#move p',{
-    	delay:400, duration:995, property:'opacity',start:0.1, end:1
+    	delay:500, duration:995, property:'opacity',start:0, end:1
     });
 
 	scrollorama.animate('#project a',{
@@ -34,7 +34,7 @@ $(document).ready(function(){
     });
 
     scrollorama.animate('#project a',{
-    	delay:995, duration:995, property:'left',start:-1200, end:0
+    	delay:1100, duration:995, property:'left',start:-1200, end:0
     });
 
 	
