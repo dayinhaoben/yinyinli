@@ -29,6 +29,14 @@ $(document).ready(function(){
     	delay:400, duration:995, property:'opacity',start:0.1, end:1
     });
 
+	scrollorama.animate('#project a',{
+    	delay:1300, duration:995, property:'opacity',start:0, end:1
+    });
+
+    scrollorama.animate('#project a',{
+    	delay:995, duration:995, property:'left',start:-1200, end:0
+    });
+
 	
 });
 

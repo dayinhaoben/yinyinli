@@ -249,26 +249,15 @@ section {
 	background:url('images/BGproject.jpg');
 	background-size: cover;
 }
-	#projectMain {
+	#projectContent {
 		width:50%;
-		float:right;
+		margin-left:40%;
 		margin-top: 5%
 	}
-	#projectMain p:nth-child(1){
-		font-size: 60px;
-		margin-left:3%;
- 	}
- 	.projectInfo {
- 		display:none;
- 		background-color: white;
- 		width:90%;
- 		height:60%;
- 		overflow: scroll;
- 	}
- 	.projectInfo img {
- 		float:left;
- 		border-radius: 10px;
- 	}
+	#projectContent h2 {
+		text-align: center;
+	}
+	
  	
 
  	
