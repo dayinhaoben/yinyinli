@@ -29,11 +29,11 @@ $(document).ready(function(){
     	delay:500, duration:995, property:'opacity',start:0, end:1
     });
 
-	scrollorama.animate('#project a',{
+	scrollorama.animate('#project .projectdiv',{
     	delay:1300, duration:995, property:'opacity',start:0, end:1
     });
 
-    scrollorama.animate('#project a',{
+    scrollorama.animate('#project .projectdiv',{
     	delay:1100, duration:995, property:'left',start:-1200, end:0
     });
 
