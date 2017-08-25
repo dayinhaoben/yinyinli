@@ -140,8 +140,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 						<div class="contactdiv"><p>liyinyin07@gmail.com</p>
 							<p>
-							<span id="android">deep link ANDROID</span>
-							<span id="ios">deep link IOS</span>
+							<p id="android">deep link ANDROID</p>
+							<p id="ios">deep link IOS</p>
+							<p id="none">deep link NONE</p>
 							</p>
 						</div>
 
@@ -184,17 +185,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		    
                 	var state = null;
                 try {
-                    state = window.open(androidUrlSchema, '_blank');
+                    	state = window.open(androidUrlSchema, '_blank');
                 } catch(e) {
                 }
                 
                 if (state) {
-                    window.close();
+                    	window.close();
                 } else {
-                    window.location = "http://google.com";
+                    	window.location = "http://google.com";
                 }
             } else {
-                console.log("Not ios and android");
+		   	 var none = document.getElementById("none");
+			none.style.backgroundColor = 'rgb(255,0,0)';
+                	console.log("Not ios and android");
             }
 		
         </script>   
