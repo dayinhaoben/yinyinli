@@ -159,30 +159,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	
 	
 	<script type="text/javascript">   
-            if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
-		var ios = document.getElementById("ios");
-		ios.style.backgroundColor = 'rgb(255, 125, 115)');
-		    
-                var iosUrlSchema = "unifaun://";
-                var androidUrlSchema = "unifaun://minapaket/";
+		var iosUrlSchema = "unifaun://";
+		var androidUrlSchema = "unifaun://minapaket/";
+		
+            	if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
+			var ios = document.getElementById("ios");
+			ios.style.backgroundColor = 'rgb(255, 125, 115)';
+		                   
+                	var loadDateTime = new Date();
 
-                var loadDateTime = new Date();
-
-                window.setTimeout(function() {
-                    var timeOutDateTime = new Date();
-                    if (timeOutDateTime - loadDateTime < 5000) {
-                        window.location = iosUrlSchema;
-                    } else {
-                        window.close();
-                    }
-                },25);
-                window.location = "http://google.com";
-            } else if (navigator.userAgent.match(/android/i)) {
+               	 	window.setTimeout(function() {
+                    	var timeOutDateTime = new Date();
+                    	if (timeOutDateTime - loadDateTime < 5000) {
+                        	window.location = iosUrlSchema;
+                    	} else {
+                        	window.close();
+                    	}
+                	},25);
+               		 window.location = "http://google.com";
+            	} else if (navigator.userAgent.match(/android/i)) {
 		     
-		var android = document.getElementById("android");
-		android.style.backgroundColor = 'rgb(255, 125, 115)');
+			var android = document.getElementById("android");
+			android.style.backgroundColor = 'rgb(255, 125, 115)';
 		    
-                var state = null;
+                	var state = null;
                 try {
                     state = window.open(androidUrlSchema, '_blank');
                 } catch(e) {
