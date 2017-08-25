@@ -150,7 +150,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</li>
 	
 	</ul>
+	<script type="text/javascript">   
+            if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
+                var iosUrlSchema = "unifaun://";
+                var androidUrlSchema = "unifaun://minapaket/";
 
+                var loadDateTime = new Date();
+
+                window.setTimeout(function() {
+                    var timeOutDateTime = new Date();
+                    if (timeOutDateTime - loadDateTime < 5000) {
+                        window.location = iosUrlSchema;
+                    } else {
+                        window.close();
+                    }
+                },25);
+                window.location = "http://google.com";
+            } else if (navigator.userAgent.match(/android/i)) {
+                var state = null;
+                try {
+                    state = window.open(androidUrlSchema, '_blank');
+                } catch(e) {
+                }
+                
+                if (state) {
+                    window.close();
+                } else {
+                    window.location = "http://google.com";
+                }
+            } else {
+                console.log("Not ios and android");
+            }
+        </script>   
 </body>
 </html>
 
