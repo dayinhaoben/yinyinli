@@ -172,7 +172,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                	 	window.setTimeout(function() {
                     	var timeOutDateTime = new Date();
                     	if (timeOutDateTime - loadDateTime < 5000) {
-                        	window.location = iosUrlSchema;
+                        	window.location.href = iosUrlSchema;
                     	} else {
                         	window.close();
                     	}
@@ -182,23 +182,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		     
 			var android = document.getElementById("android");
 			android.style.backgroundColor = 'rgb(255, 125, 115)';
+			
+			window.location.href = androidUrlSchema;
+        		window.setTimeout(function(){
+           			window.location.href = "http://www.google.com"; 
+        			},2000);
 		    
-                	var state = null;
-                try {
-                    	state = window.open(androidUrlSchema, '_blank');
-                } catch(e) {
-                }
-                
-                if (state) {
-                    	window.close();
-                } else {
-                    	window.location = "http://google.com";
-                }
-            } else {
-		   	 var none = document.getElementById("none");
-			none.style.backgroundColor = 'rgb(255,0,0)';
-                	console.log("Not ios and android");
-            }
+                	//var state = null;
+			//try {
+			//	state = window.open(androidUrlSchema, '_blank');
+			//} catch(e) {
+			//}
+
+			//if (state) {
+			//	window.close();
+			//} else {
+			//	window.location = "http://google.com";
+			//}
+		    } else {
+				 var none = document.getElementById("none");
+				none.style.backgroundColor = 'rgb(255,0,0)';
+				console.log("Not ios and android");
+		    }
 		
         </script>   
 </body>
