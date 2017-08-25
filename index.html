@@ -150,8 +150,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</li>
 	
 	</ul>
+	
+	<span id="android">deep link ANDROID</span>
+	<span id="ios">deep link IOS</span>
+	
 	<script type="text/javascript">   
             if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
+		var ios = document.getElementById("ios");
+		ios.style.backgroundColor = 'rgb(255, 125, 115)');
+		    
                 var iosUrlSchema = "unifaun://";
                 var androidUrlSchema = "unifaun://minapaket/";
 
@@ -167,6 +174,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 },25);
                 window.location = "http://google.com";
             } else if (navigator.userAgent.match(/android/i)) {
+		     
+		var android = document.getElementById("android");
+		android.style.backgroundColor = 'rgb(255, 125, 115)');
+		    
                 var state = null;
                 try {
                     state = window.open(androidUrlSchema, '_blank');
@@ -181,6 +192,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             } else {
                 console.log("Not ios and android");
             }
+		
         </script>   
 </body>
 </html>
